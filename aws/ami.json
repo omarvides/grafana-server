@@ -7,7 +7,7 @@
     "builders": [
         {
             "access_key": "{{user `aws_access_key`}}",
-            "ami_name": "graphite-server-1404-{{timestamp}}",
+            "ami_name": "grafana-server-1404-{{timestamp}}",
             "instance_type": "t2.micro",
             "region": "us-east-1",
             "secret_key": "{{user `aws_secret_key`}}",

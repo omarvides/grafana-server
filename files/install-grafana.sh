@@ -22,4 +22,5 @@ yum install -y nginx
 
 # Installing and enabling Grafana
 yum install -y https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana-5.1.4-1.x86_64.rpm
-service grafana-server start
+systemctl start grafana-server
+chkconfig grafana-server on
