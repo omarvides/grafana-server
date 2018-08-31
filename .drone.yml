@@ -1,5 +1,6 @@
 pipeline:
   build_image:
     image: hashicorp/packer:light
+    secrets: [aws_secret_access_key, aws_access_key_id]
     commands:
       - packer build aws/ami.json
