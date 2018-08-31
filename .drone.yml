@@ -1,4 +1,5 @@
 pipeline:
-  image: hashicorp/packer:light
   build_image:
-    - packer build aws/ami.json
+    image: hashicorp/packer:light
+    commands:
+      - packer build aws/ami.json
